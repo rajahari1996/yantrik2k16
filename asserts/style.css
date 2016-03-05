@@ -1,0 +1,154 @@
+
+/* Main Style Sheet */
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic);
+
+
+html{
+	font-size: 10px;
+}
+body{
+	background-color: #EEEEEE;
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+	border: 0px;
+	font-family: 'Roboto' , sans-serif;
+}
+
+/* Container -Start */
+.container{
+	display: block;
+}
+
+/** Header -Start **/
+header{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #212121;
+	box-shadow: 0 0 1rem #2e3436;
+}
+.logo{
+	width: 20rem;
+	height: 5rem;
+	background-image: url(images/logo.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	margin: 1rem;
+}
+.menu{
+	display: flex;
+	flex-direction: row;
+}
+.menu a{
+	padding: 1rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	color: #EEE;
+	text-decoration: none;
+	text-align: center;
+}
+.menu a:visited{
+	color: #EEE;
+}
+/** Header -End **/
+
+/** Content -Start **/
+.content{
+	display: flex;
+	flex-direction: column;
+}
+.content_box{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+}
+.content_box_title{
+	font-size: 4rem;
+	text-align: center;
+}
+.content_box_desc{
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+	align-items: center;
+	padding: 2rem;
+	margin: 2rem;
+}
+#events{
+	background-color: #848484;
+	box-shadow: 0 0 0.5rem #626262;
+	color: #EEE;
+}
+.card{
+	display: block;
+	width: 20rem;
+	margin: 1rem;
+	padding: 1rem;
+}
+.card p{
+	text-align: center;
+	font-size: 2rem;
+}
+.card img{
+	margin: 4rem;
+	width: 12rem;
+	height: 12rem;
+}
+.card button{
+	margin: 2rem;
+	width: 16rem;
+	height: 5rem;
+	border: none;
+	background-color:#B71C1C;
+	color: #EEE;
+	font-size: 2rem;
+	border-radius: 0.5rem;
+}
+
+.poster{
+	width: 60%;
+	margin-left: 20%;
+	margin-top: 2rem;
+}
+/** Content -End **/
+
+/** Footer -Start **/
+footer{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	padding: 2rem;
+	font-size: 2rem;
+	background-color: #212121;
+	color: #EEE;
+	box-shadow: 0 0 1rem #2e3436;
+}
+/** Footer -End **/
+
+/* Container -End */
+
+
+
+/* Media rules */
+
+@media only screen and (max-width:1000px){
+	body{
+	
+	}
+	
+	.menu{
+	flex-direction: column;
+	}
+}
+@media only screen and (max-width:700px){
+	
+}
+@media only screen and (max-width:400px){
+	header{
+	flex-direction: column;
+	}
+}
