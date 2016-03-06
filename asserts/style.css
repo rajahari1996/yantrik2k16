@@ -10,7 +10,6 @@ html{
 body{
 	background-color: #EEEEEE;
 	box-sizing: border-box;
-	overflow-y: hidden;
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
@@ -68,6 +67,7 @@ header{
 	flex-direction: column;
 	background-color: rgba(42, 42, 42, 0.8);
 	color: #EEE;
+	height: 700px;
 }
 .content_box{
 	display: flex;
