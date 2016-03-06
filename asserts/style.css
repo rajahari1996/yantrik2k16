@@ -13,6 +13,7 @@ body{
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
+	overflow-x:hidden;
 	font-family: 'Roboto' , sans-serif;
 }
 
@@ -120,6 +121,9 @@ header{
 /** Footer -Start **/
 footer{
 	display: flex;
+	position:absolute;
+	bottom:0%;
+	width:100%;
 	flex-direction: row;
 	justify-content: left;
 	padding: 2rem;

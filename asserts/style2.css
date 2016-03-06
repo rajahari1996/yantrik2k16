@@ -8,6 +8,7 @@ html{
 	font-size: 10px;
 }
 body{
+	overflow-x:hidden;
 	background-color: #EEEEEE;
 	box-sizing: border-box;
 	margin: 0px;
@@ -123,6 +124,9 @@ footer{
 	flex-direction: row;
 	justify-content: left;
 	padding: 2rem;
+	position:absolute;
+	bottom:0%;
+	width:100%;
 	font-size: 2rem;
 	background-color: #212121;
 	color: #EEE;
