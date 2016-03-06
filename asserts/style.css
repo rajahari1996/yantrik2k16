@@ -10,10 +10,15 @@ html{
 body{
 	background-color: #EEEEEE;
 	box-sizing: border-box;
+	overflow-y: hidden;
 	margin: 0px;
 	padding: 0px;
 	border: 0px;
 	font-family: 'Roboto' , sans-serif;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
 /* Container -Start */
