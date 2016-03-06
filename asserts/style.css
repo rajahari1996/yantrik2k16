@@ -61,6 +61,8 @@ header{
 .content{
 	display: flex;
 	flex-direction: column;
+	background-color: rgba(42, 42, 42, 0.8);
+	color: #EEE;
 }
 .content_box{
 	display: flex;
@@ -79,9 +81,16 @@ header{
 	padding: 2rem;
 	margin: 2rem;
 }
-#events{
-	background-color: rgba(42, 42, 42, 0.8);
-	color: #EEE;
+.content_box_desc p{
+	font-size: 2rem;
+}
+.content_box_desc h2{
+	font-size: 3rem;
+	font-weight: bold;
+}
+.vertical{
+	flex-direction: column;
+	align-items: flex-start;
 }
 a.card{
 	text-align: center;
@@ -116,7 +125,7 @@ a.card button{
 	border-radius: 0.5rem;
 	cursor: pointer;
 }
-a.card span{
+a.card h6{
 	margin: 1rem;
 	width: 16rem;
 	font-size: 1.5rem;
@@ -134,7 +143,7 @@ a.card span{
 footer{
 	display: flex;
 	flex-direction: row;
-	justify-content: left;
+	justify-content: flex-start;
 	padding: 2rem;
 	font-size: 2rem;
 	background-color: #212121;
