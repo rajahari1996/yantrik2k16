@@ -23,44 +23,6 @@
 	clear: both;
 }
 
-/* body {
-	font-family: Avenir, 'Helvetica Neue', 'Lato', 'Segoe UI', Helvetica, Arial, sans-serif;
-	line-height: 1.5;
-	color: #3b393d;
-	background: #f0f0f0;
-	background-size: cover;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-	overflow: hidden;
-	overflow-y: scroll;
-}
-
-body.body--hidden {
-	overflow: hidden;
-}
-
-body.body--hidden .codrops-header,
-body.body--hidden .content--related {
-	opacity: 0;
-}
-
-.codrops-header,
-.content--related {
-	-webkit-transition: opacity 300ms ease-in-out;
-	transition: opacity 300ms ease-in-out;
-}
-
-a {
-	text-decoration: none;
-	color: #de6551;
-	outline: none;
-}
-
-a:hover,
-a:focus {
-	color: #3b393d;
-}
- */
 .demo-2 a {
 	color: #7cc576;
 }
