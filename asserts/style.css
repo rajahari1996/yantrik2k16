@@ -31,16 +31,18 @@ header{
 	box-shadow: 0 0 1rem #2e3436;
 }
 .logo{
-	width: 20rem;
-	height: 5rem;
+	width: 18rem;
+	height: 5.5rem;
 	background-image: url(images/logo.png);
-	background-size: contain;
+	background-size: 100% 100%;
 	background-repeat: no-repeat;
 	margin: 1rem;
+	margin-left: 3rem;
 }
 .menu{
 	display: flex;
 	flex-direction: row;
+	margin-right: 3rem;
 }
 .menu a{
 	padding: 1rem;
@@ -81,7 +83,7 @@ header{
 	background-color: rgba(42, 42, 42, 0.8);
 	color: #EEE;
 }
-.card{
+a.card{
 	text-align: center;
 	display: block;
 	width: 20rem;
@@ -89,17 +91,21 @@ header{
 	padding: 1rem;
 	border: dotted #212121 3px;
 	border-radius: 0.5rem;
-	cursor: pointer;
+	color: #EEE;
+	text-decoration: none;
 }
-.card p{
+a.card:visited{
+	color: #EEE;
+}
+a.card p{
 	font-size: 2rem;
 }
-.card img{
+a.card img{
 	margin: 4rem;
 	width: 12rem;
 	height: 12rem;
 }
-.card button{
+a.card button{
 	margin: 2rem;
 	width: 16rem;
 	height: 5rem;
@@ -108,6 +114,13 @@ header{
 	color: #000;
 	font-size: 2rem;
 	border-radius: 0.5rem;
+	cursor: pointer;
+}
+a.card span{
+	margin: 1rem;
+	width: 16rem;
+	font-size: 1.5rem;
+	text-align: justify;
 }
 
 .poster{
