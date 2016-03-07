@@ -67,7 +67,6 @@ header{
 	flex-direction: column;
 	background-color: rgba(42, 42, 42, 0.8);
 	color: #EEE;
-	height: 700px;
 }
 .content_box{
 	display: flex;
@@ -148,10 +147,11 @@ a.card h6{
 footer{
 	display: flex;
 	flex-direction: row;
-	justify-content: flex-start;
+	justify-content: space-between;
+	align-items: center;
 	padding: 2rem;
 	font-size: 2rem;
-	background-color: #212121;
+	background-color: rgba(21, 21, 21, 0.9);
 	color: #EEE;
 	box-shadow: 0 0 1rem #2e3436;
 }
