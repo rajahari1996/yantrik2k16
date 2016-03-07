@@ -67,6 +67,7 @@ header{
 	flex-direction: column;
 	background-color: rgba(42, 42, 42, 0.8);
 	color: #EEE;
+	min-height: 760px;
 }
 .content_box{
 	display: flex;
@@ -130,9 +131,31 @@ a.card button{
 	cursor: pointer;
 }
 a.card h6{
-	margin: 1rem;
+	margin: 2rem;
 	width: 16rem;
-	font-size: 1.5rem;
+	font-weight: normal;
+	font-size: 1.4rem;
+	text-align: justify;
+}
+
+a.card_flex{
+	display: flex;
+	flex-direction: column;
+	padding: 2rem;
+	margin: 2rem;
+	border: dotted #212121 3px;
+	border-radius: 0.5rem;
+	color: #EEE;
+	text-decoration: none;
+}
+a.card_flex p{
+	font-size: 2rem;
+
+}
+a.card_flex h6{
+	margin: 2rem;
+	font-weight: normal;
+	font-size: 1.7rem;
 	text-align: justify;
 }
 
