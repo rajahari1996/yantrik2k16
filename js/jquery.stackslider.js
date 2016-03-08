@@ -454,7 +454,7 @@
 
 				var $item = $( this ),
 					itemH = $item.height(), itemW = $item.width(),
-					itemTop = wrapperH - self.radius - itemH / 2;
+					itemTop = wrapperH - self.radius - itemH;
 
 				if( $item.index() !== self.current ) {
 					$item.addClass( 'st-right' );

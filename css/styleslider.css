@@ -10,14 +10,16 @@
 	font-weight: normal;
 	font-style: normal;
 }
-
+section{
+	margin: 4rem;
+}
 .js .st-stack-raw {
 	display: none;
 }
 
 .st-wrapper {
 	width: 60%;
-	height: 400px;
+	height: 600px;
 	position: relative;
 	margin: 40px auto;
 
@@ -225,7 +227,6 @@
 	max-width: 100%;
 	display: block;
 }
-
 .st-wrapper .st-item a {
 	background: #fff;
 	box-shadow: 0 0 0 9px #fff, 0 1px 3px 9px rgba(0,0,0,0.3);
