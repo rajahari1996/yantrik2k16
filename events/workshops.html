@@ -62,7 +62,15 @@ overflow-x: hidden;
 <a class="contactus" href="../contactus.html">CONTACT US</a>
 </div>
 </header>
-	<div class="container">
+<script>
+$(window).load(function() {
+  document.getElementById("container").style.minHeight = window.innerHeight + "px";
+});
+$(window).resize(function() {
+  document.getElementById("container").style.minHeight = window.innerHeight + "px";
+});
+</script>
+	<div class="container" id="container">
 		<div class="content">
 	<div class="content_box_title"> Workshops</div>
 			<!-- trianglify pattern container -->
