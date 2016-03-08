@@ -4,12 +4,12 @@
  *
  * Licensed under the MIT license.
  * http://www.opensource.org/licenses/mit-license.php
- * 
+ *
  * Copyright 2012, Codrops
  * http://www.codrops.com
  */
 ;( function( $, window, undefined ) {
-	
+
 	'use strict';
 
 	/*
@@ -180,7 +180,7 @@
 		$document = $(document),
 		Modernizr = window.Modernizr;
 
-	$.StackSlider = function( options, element ) {	
+	$.StackSlider = function( options, element ) {
 		this.$stack = $( element ).hide();
 		this._init( options );
 	};
@@ -198,7 +198,7 @@
 	$.StackSlider.prototype = {
 
 		_init : function( options ) {
-			
+
 			// options
 			this.options = $.extend( true, {}, $.StackSlider.defaults, options );
 
@@ -228,7 +228,7 @@
 
 			var self = this;
 			this.$stack.imagesLoaded( function() {
-				
+
 				self._layout();
 				if( self.itemsCount === 0 ) {
 					return false;
@@ -244,17 +244,17 @@
 			var $items = this.$stack.children( 'li' );
 			// total items
 			this.itemsCount = $items.length;
-			
+
 			// main wrapper
 			this.$wrapper = $( '<div class="st-wrapper"></div>' );
-			
+
 			// add 2 piles
 			if( this.options.piles ) {
 				this.$lPile = $( '<div class="st-stack st-stack-left"></div>' );
 				this.$rPile = $( '<div class="st-stack st-stack-right"></div>' );
 				this.$wrapper.append( this.$lPile, this.$rPile );
 			}
-			
+
 			// add title
 			this.$title = $( '<div class="st-title"></div>' ).appendTo( this.$wrapper );
 
@@ -276,7 +276,7 @@
 			this.$wrapper.insertAfter( this.$stack ).prepend( this.$listitems );
 			this.$stack.remove();
 
-			if( this.options.piles ) {			
+			if( this.options.piles ) {
 				this.$rPile.css( 'height', '+=' + ( this.itemsCount - 1 ) * 5 );
 			}
 
@@ -310,7 +310,7 @@
 						self._flow( 'next' );
 					}, 600 );
 
-				}, 
+				},
 				'mouseup.stackslider mouseleave.stackslider' : function() {
 					self._mouseup( 'next' );
 				}
@@ -344,7 +344,7 @@
 			clearTimeout( this.flowtimeout );
 			if( this.flow ) {
 				setTimeout( function() {
-					
+
 					if( self.current !== 0 && self.current !== self.itemsCount - 1 ) {
 						self._navigate( dir );
 					}
@@ -358,7 +358,7 @@
 
 			var self = this;
 			this._navigate( dir, true );
-			this.flowtimeout = setTimeout( function() { 
+			this.flowtimeout = setTimeout( function() {
 				self._flow( dir );
 			}, 150 );
 
@@ -376,7 +376,7 @@
 				dirclass = flow ? 'st-leftflow' : posclass;
 				pileOut = 'right';
 				pileIn = 'left';
-				
+
 			}
 			else if( dir === 'prev' && this.current > 0 ) {
 
@@ -385,7 +385,7 @@
 				dirclass = flow ? 'st-rightflow' : posclass;
 				pileOut = 'left';
 				pileIn = 'right';
-				
+
 			}
 			else {
 				return false;
@@ -411,9 +411,9 @@
 			}
 
 			$nextItem.show();
-			
+
 			setTimeout( function() {
-				
+
 				if( ( flow && ( self.current === 0 || self.current === self.itemsCount - 1 ) ) || !flow ) {
 					$nextItem.removeClass( classes ).addClass( 'st-center' );
 				}
@@ -464,7 +464,7 @@
 					$item.css( {
 						transition : self.transformName + ' ' + self.options.speed + 'ms ' + self.options.easing + ', opacity ' + self.options.speed + 'ms ' + self.options.easing,
 						transformOrigin : '50% ' + ( self.radius + itemH / 2 - pileHFactor ) + 'px'
-					} );					
+					} );
 				}
 
 				$item.css( {
@@ -477,68 +477,68 @@
 		}
 
 	};
-	
+
 	var logError = function( message ) {
 
 		if ( window.console ) {
 
 			window.console.error( message );
-		
+
 		}
 
 	};
-	
+
 	$.fn.stackslider = function( options ) {
 
 		var instance = $.data( this, 'stackslider' );
-		
+
 		if ( typeof options === 'string' ) {
-			
+
 			var args = Array.prototype.slice.call( arguments, 1 );
-			
+
 			this.each(function() {
-			
+
 				if ( !instance ) {
 
 					logError( "cannot call methods on stackslider prior to initialization; " +
 					"attempted to call method '" + options + "'" );
 					return;
-				
+
 				}
-				
+
 				if ( !$.isFunction( instance[options] ) || options.charAt(0) === "_" ) {
 
 					logError( "no such method '" + options + "' for stackslider instance" );
 					return;
-				
+
 				}
-				
+
 				instance[ options ].apply( instance, args );
-			
+
 			});
-		
-		} 
+
+		}
 		else {
-		
+
 			this.each(function() {
-				
+
 				if ( instance ) {
 
 					instance._init();
-				
+
 				}
 				else {
 
 					instance = $.data( this, 'stackslider', new $.StackSlider( options, this ) );
-				
+
 				}
 
 			});
-		
+
 		}
-		
+
 		return instance;
-		
+
 	};
-	
+
 } )( jQuery, window );
