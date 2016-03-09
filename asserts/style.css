@@ -36,7 +36,6 @@ body{
 .container{
 	display: flex;
 	flex-direction: column;
-	align-items: stretch;
 }
 
 /** Header -Start **/
@@ -48,6 +47,14 @@ header{
 	width: 100%;
 	background-color: rgba(21, 21, 21, 0.9);
 	box-shadow: 0 0 1rem #2e3436;
+}
+#opener{
+	padding: 2rem;
+	text-align: center;
+	color: #EEE;
+	font-size: 3rem;
+	cursor: pointer;
+	display: none;
 }
 .logo{
 	width: 18rem;
@@ -72,6 +79,21 @@ header{
 	text-align: center;
 }
 .menu a:visited{
+	color: #EEE;
+}
+#menu_short{
+	display: none;
+	flex-direction: column;
+}
+#menu_short a{
+	padding: 1rem;
+	margin: 1rem;
+	font-size: 1.5rem;
+	color: #EEE;
+	text-decoration: none;
+	text-align: center;
+}
+#menu_short a:visited{
 	color: #EEE;
 }
 /** Header -End **/
@@ -179,8 +201,8 @@ a.card_flex h6{
 }
 
 .poster{
+	width: 800px;
 	height: 500px;
-	width: 60%;
 	margin: auto;
 	margin-top: 2rem;
 }
@@ -217,6 +239,22 @@ footer{
 	.menu{
 	flex-direction: column;
 	}
+	#opener{
+		display: block;
+	}
+	#menu_short{
+		display: flex;
+	}
+	.menu{
+		display: none;
+	}
+	.poster{
+			width: 500px;
+			height: 350px;
+	}
+	.countdownHolder{
+		font: 30px/1.5 'Open Sans Condensed',sans-serif !important;
+	}
 }
 @media only screen and (max-width:700px){
 
@@ -224,5 +262,12 @@ footer{
 @media only screen and (max-width:400px){
 	header{
 	flex-direction: column;
+	}
+	.countdownHolder{
+		font: 20px/1.5 'Open Sans Condensed',sans-serif !important;
+	}
+	.poster{
+			width: 300px;
+			height: 200px;
 	}
 }
