@@ -97,7 +97,7 @@ header{
 }
 .content_box_desc{
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
 	flex-wrap: wrap;
 	align-items: center;
 	padding: 2rem;
@@ -118,7 +118,9 @@ a.card{
 	text-align: center;
 	display: block;
 	width: 20rem;
-	margin: 1rem;
+	margin: 2rem;
+	margin-left: 6rem;
+	margin-right: 6rem;
 	padding: 1rem;
 	border: dotted #212121 3px;
 	border-radius: 0.5rem;
