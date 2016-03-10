@@ -209,10 +209,20 @@ a.card_flex h6{
 /** Content -End **/
 
 /** Footer -Start **/
+.social{
+	padding: 1rem;
+	margin: 1rem;
+	flex: 1;
+	display: flex;
+	justify-content: flex-end;
+}
+.social div{
+	margin: 0.5rem;
+}
 footer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: space-around;
 	align-items: center;
 	align-self: flex-end;
 	width: 100%;
@@ -269,5 +279,8 @@ footer{
 	.poster{
 			width: 300px;
 			height: 200px;
+	}
+	footer{
+		font-size: 1rem;
 	}
 }
