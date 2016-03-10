@@ -212,15 +212,15 @@ a.card_flex h6{
 .social{
 	padding: 1rem;
 	margin: 1rem;
-	flex: 1;
 	display: flex;
-	justify-content: flex-end;
+	justify-content: space-around;
+	align-items: baseline;
 }
 .social div{
 	margin: 0.5rem;
 }
 .social div:first-child{
-	justify-content: center;
+	margin: 1rem;
 }
 .social div a{
 	color: #EEE;
@@ -231,7 +231,7 @@ a.card_flex h6{
 footer{
 	display: flex;
 	flex-direction: row;
-	justify-content: space-around;
+	justify-content: space-between;;
 	align-items: center;
 	align-self: flex-end;
 	width: 100%;
