@@ -219,6 +219,15 @@ a.card_flex h6{
 .social div{
 	margin: 0.5rem;
 }
+.social div:first-child{
+	justify-content: center;
+}
+.social div a{
+	color: #EEE;
+}
+.social div a:visited{
+	color: #EEE;
+}
 footer{
 	display: flex;
 	flex-direction: row;
